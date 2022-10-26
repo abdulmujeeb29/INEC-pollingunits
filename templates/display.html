@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+
+<!-- web page displaying result for each individual polling unit  -->
+ <html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div>
+            {% for unit in Pollingunit %}
+            <ul>
+                <h3>{{unit.uniqueid}}</h3>
+                <h3>{{unit.polling_unit_id}}</h3>
+                <h3>{{unit.ward_id}}</h3>
+                <h3>{{unit.lga_id}}</h3>
+                <h3>{{unit.uniqueward_id}}</h3>
+                <h3>{{unit.polling_unit_number}}</h3>
+                <h3>{{unit.polling_unit_description}}</h3>
+                <h3>{{unit.date_entered}}</h3>
+                <h3>{{unit.user_ip_address}}</h3>
+                
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+ </html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+
+<!-- web page storing  result for all parties for a new  polling unit  -->
+ <html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div>
+            {% for party in Party %}
+            <ul>
+                <h3>{{party.partyid}}</h3>
+                <h3>{{party.partyname}}</h3>
+                
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+ </html>
